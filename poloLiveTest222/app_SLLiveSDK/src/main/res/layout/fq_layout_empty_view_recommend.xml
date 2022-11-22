@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fq_colorWhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:drawableTop="@drawable/fq_ic_placeholder_empty_logo"
+            android:gravity="center"
+            android:text="@string/fq_no_attention_tips"
+            android:textColor="@color/fq_text_gray_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fq_show_like_anchor_tips"
+            android:textColor="@color/fq_colorGray52"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/fq_colorBgPrimary" />
+
+    <TextView
+        android:id="@+id/tv_your_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fq_colorWhite"
+        android:drawableLeft="@drawable/fq_ic_recommend"
+        android:drawablePadding="5dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/fq_your_recommend"
+        android:textColor="@color/fq_colorBlack"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.slzhibo.library.ui.view.widget.RoundSquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sq_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rlClipBackground="true"
+    app:rlRadius="@dimen/fq_live_item_round_corners">
+
+    <com.slzhibo.library.ui.view.widget.SquareImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fq_ic_placeholder_corners" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp">
+
+        <TextView
+            android:id="@+id/tv_pay_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/fq_shape_pay_round_ticket_bg"
+            android:gravity="center"
+            android:paddingLeft="13dp"
+            android:paddingTop="4dp"
+            android:paddingRight="13dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/fq_text_white_color"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_cover_identity"
+            android:layout_width="72dp"
+            android:layout_height="23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitEnd"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_label"
+            android:layout_width="72dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="4dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="72dp"
+            android:maxHeight="23dp"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_pendant"
+            android:layout_width="72dp"
+            android:layout_height="23dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="72dp"
+            android:maxHeight="23dp"
+            android:scaleType="fitStart"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/fq_shape_live_item_bottom_transparent"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_live_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/fq_text_white_color"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_live_title"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/fl_personal_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_live_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/fq_shape_live_dot" />
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/fq_text_white_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_personal_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_live_title"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/tv_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/fq_text_white_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/fq_label_live_ad"
+                android:gravity="center"
+                android:paddingStart="6dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="2dp"
+                android:text="@string/fq_live_ad"
+                android:textColor="@color/fq_text_white_color"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.slzhibo.library.ui.view.widget.SquareWidthRelativeLayout
+        android:id="@+id/rl_live_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fq_shape_live_mask_corner_bg"
+        android:padding="10dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/fq_text_anchor_no_open_tips"
+            android:textColor="@color/fq_colorWhite" />
+    </com.slzhibo.library.ui.view.widget.SquareWidthRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pre_notice_bg"
+        android:layout_width="138dp"
+        android:layout_height="116dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fq_ic_user_grade_notice" />
+
+        <TextView
+            android:id="@+id/tv_pre_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/fq_colorBtnTextPrimary"
+            android:textSize="11sp" />
+    </RelativeLayout>
+</com.slzhibo.library.ui.view.widget.RoundSquareRelativeLayout>

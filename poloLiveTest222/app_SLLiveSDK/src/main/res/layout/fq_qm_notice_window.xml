@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/fq_hj_float_window_width"
+    android:layout_height="@dimen/fq_hj_float_window_height">
+
+    <ImageView
+        android:id="@+id/iv_gift_icon"
+        android:layout_width="@dimen/fq_hj_float_window_icon_view_size"
+        android:layout_height="@dimen/fq_hj_float_window_icon_view_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fq_hj_float_window_icon_view_margin_top" />
+
+    <com.slzhibo.library.ui.view.widget.marqueenview.MarqueeTextView
+        android:id="@+id/mv_task_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fq_hj_float_window_action_view_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fq_qm_shape_qm_marqueeview_bg"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:textColor="@color/fq_text_white_color"
+        android:textSize="@dimen/fq_hj_float_window_text_size" />
+
+    <com.slzhibo.library.ui.view.widget.progress.QMTaskProgressView
+        android:id="@+id/qm_task_progress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fq_hj_float_window_action_view_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:qm_background_color="#ffff477b"
+        app:qm_background_gradient_color="#fffebd86"
+        app:qm_background_second_color="#cbcbcb"
+        app:qm_enable_gradient="true" />
+</merge>

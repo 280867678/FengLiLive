@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_msg_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fq_shape_msg_bg_transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <com.slzhibo.library.ui.view.custom.UserGradeView
+            android:id="@+id/user_grade_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_margin_3"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_mark"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="5dp"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_chat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="true"
+        android:lineSpacingExtra="2dp"
+        android:shadowColor="@color/fq_text_shadow_color"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="3"
+        android:textColor="@color/fq_live_msg_white_color"
+        android:textSize="12sp" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="fq_live" ></dbname>
+
+    <version value="49" ></version>
+
+    <list>
+        <mapping class="com.slzhibo.library.model.db.SearchKeywordEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.WatchRecordEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.StickerEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.GiftBoxEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.GiftDownloadItemDBEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.AttentionAnchorDBEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.ShieldUserDBEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.LightImpressionDBEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.LiveDataEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.AnchorLiveDataEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.MsgDetailListEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.MsgListEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.MsgStatusEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.ShortcutItemEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.PayLiveDBEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.ActivityDBEntity"></mapping>
+        <mapping class="com.slzhibo.library.model.db.ActivityBagDBEntity"></mapping>
+    </list>
+
+</litepal>
