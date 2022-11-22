@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_video_maker_level"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_15dp"
+    android:background="@drawable/bg_rectangle_color_1a_radius_20"
+    android:gravity="center_vertical"
+    android:paddingEnd="@dimen/dimen_8dp">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_15dp"
+        android:layout_height="@dimen/dimen_15dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_video_maker_level_small" />
+
+    <TextView
+        android:id="@+id/tv_video_maker_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_3dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_ffdb83"
+        android:textSize="@dimen/sub_third_text_size"
+        android:textStyle="italic|bold" />
+</LinearLayout>

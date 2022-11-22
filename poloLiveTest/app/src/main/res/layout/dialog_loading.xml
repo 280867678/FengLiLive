@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_loading"
+    android:gravity="center"
+    android:minWidth="@dimen/dimen_80dp"
+    android:minHeight="@dimen/dimen_80dp"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/dimen_10dp"
+    android:paddingTop="@dimen/dimen_12dp"
+    android:paddingEnd="@dimen/dimen_10dp"
+    android:paddingBottom="@dimen/dimen_12dp">
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:text="加載中…"
+        android:textColor="@color/white"
+        android:textSize="@dimen/third_text_size" />
+</LinearLayout>

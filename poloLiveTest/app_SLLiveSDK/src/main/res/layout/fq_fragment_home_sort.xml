@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fq_srlAccentColor="#ffbdbdbd"
+            app:fq_srlClassicsSpinnerStyle="FixedBehind"
+            app:fq_srlDrawableArrowSize="15dp"
+            app:fq_srlDrawableMarginRight="20dp"
+            app:fq_srlDrawableProgressSize="20dp"
+            app:fq_srlEnableLastTime="false"
+            app:fq_srlFinishDuration="500"
+            app:fq_srlPrimaryColor="@color/fq_colorWhite"
+            app:fq_srlTextFailed="@string/fq_srl_header_failed"
+            app:fq_srlTextFinish="@string/fq_srl_header_finish"
+            app:fq_srlTextLoading="@string/fq_srl_header_loading"
+            app:fq_srlTextPulling="@string/fq_srl_header_pulling"
+            app:fq_srlTextRefreshing="@string/fq_srl_header_refreshing"
+            app:fq_srlTextRelease="@string/fq_srl_header_release"
+            app:fq_srlTextSecondary="@string/fq_srl_header_secondary"
+            app:fq_srlTextSizeTime="10dp"
+            app:fq_srlTextSizeTitle="@dimen/fq_smart_refresh_title_size"
+            app:fq_srlTextTimeMarginTop="2dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fq_srlAccentColor="#ffbdbdbd"
+            app:fq_srlDrawableArrowSize="15dp"
+            app:fq_srlPrimaryColor="@color/fq_colorWhite"
+            app:fq_srlTextFailed="@string/fq_srl_footer_failed"
+            app:fq_srlTextFinish="@string/fq_srl_footer_finish"
+            app:fq_srlTextLoading="@string/fq_srl_footer_loading"
+            app:fq_srlTextNothing="@string/fq_srl_footer_nothing"
+            app:fq_srlTextPulling="@string/fq_srl_footer_pulling"
+            app:fq_srlTextRefreshing="@string/fq_srl_footer_refreshing"
+            app:fq_srlTextRelease="@string/fq_srl_footer_release"
+            app:fq_srlTextSizeTitle="@dimen/fq_smart_refresh_title_size" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:id="@+id/fl_content_view"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent">-->
+
+    <!--    <com.slzhibo.library.ui.view.widget.smartrefreshlayout.layout.SmartRefreshLayout-->
+    <!--        android:id="@+id/refreshLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <com.slzhibo.library.ui.view.widget.smartrefreshlayout.layout.header.ClassicsHeader-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:fq_srlAccentColor="#ffbdbdbd"-->
+    <!--            app:fq_srlClassicsSpinnerStyle="FixedBehind"-->
+    <!--            app:fq_srlDrawableArrowSize="15dp"-->
+    <!--            app:fq_srlDrawableMarginRight="20dp"-->
+    <!--            app:fq_srlDrawableProgressSize="20dp"-->
+    <!--            app:fq_srlEnableLastTime="false"-->
+    <!--            app:fq_srlFinishDuration="500"-->
+    <!--            app:fq_srlPrimaryColor="@color/fq_colorWhite"-->
+    <!--            app:fq_srlTextFailed="@string/fq_srl_header_failed"-->
+    <!--            app:fq_srlTextFinish="@string/fq_srl_header_finish"-->
+    <!--            app:fq_srlTextLoading="@string/fq_srl_header_loading"-->
+    <!--            app:fq_srlTextPulling="@string/fq_srl_header_pulling"-->
+    <!--            app:fq_srlTextRefreshing="@string/fq_srl_header_refreshing"-->
+    <!--            app:fq_srlTextRelease="@string/fq_srl_header_release"-->
+    <!--            app:fq_srlTextSecondary="@string/fq_srl_header_secondary"-->
+    <!--            app:fq_srlTextSizeTime="10dp"-->
+    <!--            app:fq_srlTextSizeTitle="@dimen/fq_smart_refresh_title_size"-->
+    <!--            app:fq_srlTextTimeMarginTop="2dp" />-->
+
+    <!--        <androidx.recyclerview.widget.RecyclerView-->
+    <!--            android:id="@+id/recycler_view"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:overScrollMode="never"-->
+    <!--            android:scrollbars="none" />-->
+
+    <!--        <com.slzhibo.library.ui.view.widget.smartrefreshlayout.layout.footer.ClassicsFooter-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:fq_srlAccentColor="#ffbdbdbd"-->
+    <!--            app:fq_srlDrawableArrowSize="15dp"-->
+    <!--            app:fq_srlPrimaryColor="@color/fq_colorWhite"-->
+    <!--            app:fq_srlTextFailed="@string/fq_srl_footer_failed"-->
+    <!--            app:fq_srlTextFinish="@string/fq_srl_footer_finish"-->
+    <!--            app:fq_srlTextLoading="@string/fq_srl_footer_loading"-->
+    <!--            app:fq_srlTextNothing="@string/fq_srl_footer_nothing"-->
+    <!--            app:fq_srlTextPulling="@string/fq_srl_footer_pulling"-->
+    <!--            app:fq_srlTextRefreshing="@string/fq_srl_footer_refreshing"-->
+    <!--            app:fq_srlTextRelease="@string/fq_srl_footer_release"-->
+    <!--            app:fq_srlTextSizeTitle="@dimen/fq_smart_refresh_title_size" />-->
+    <!--    </com.slzhibo.library.ui.view.widget.smartrefreshlayout.layout.SmartRefreshLayout>-->
+    <!--</FrameLayout>-->

@@ -1,0 +1,142 @@
+plugins {
+    id 'com.android.application'
+}
+//第一行添加
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+//greendao {
+//    schemaVersion 1.2 //数据库版本号
+//    //这里添加的是生成DaoMaster,DaoSession和XXDao文件的地方，com.felix.testapplication是我项目的主目录，它会给你在主目录下生成gen文件夹
+////    daoPackage 'com.boluouitest2zhibo.greendao.db'
+//    daoPackage 'com.blmvl.blvl.db'
+//    targetGenDir 'src/main/java' //生成的路径
+//}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.blmvl.blvl"
+        minSdk 21
+        targetSdk 29
+        versionCode 317
+        versionName "3.1.7"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+
+
+
+
+        // 1.加入这句话
+        useLibrary 'org.apache.http.legacy'
+
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+        // 这里添加
+        multiDexEnabled true
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+
+
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi-v7a', 'armeabi'
+            universalApk false
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+    }
+
+
+/**
+ * Execution failed for task ':app:mergeDebugJavaResource'.
+ > A failure occurred while executing com.android.build.gradle.internal.tasks.MergeJavaResWorkAction
+ > 2 files found with path 'META-INF/rxjava.properties' from inputs:
+ - D:\AS\Android Studio\gradle\caches\transforms-3\d1443fd7a1a0a34939eec70e2a2d3761\transformed\jetified-rxjava-2.0.4.jar
+ - D:\AS\Android Studio\gradle\caches\transforms-3\157ebc6a6f5ee6c9507f5b26e96c42af\transformed\jetified-rxjava-1.1.5.jar
+ Adding a packagingOptions block may help, please refer to
+ */
+    //################ 在这里添加 ##########################//
+    packagingOptions {exclude 'META-INF/rxjava.properties'}
+
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.core:core:1.6.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation project(path: ':app_SLLiveSDK')
+    //////////////////////////////////////////////////////////////
+    implementation 'org.greenrobot:greendao:3.3.0'
+    implementation 'org.greenrobot:greendao-generator:3.3.0'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+    //    //或androidx支持库的multidex库
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+
+
+    implementation 'com.blankj:utilcode:1.30.0'
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+
+    //    // 基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+//// kotlin扩展（可选）
+//// fragment快速实现（可选）
+    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+
+    implementation 'com.alibaba:fastjson:1.1.72.android'
+
+    implementation 'com.lzy.net:okgo:3.0.4'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'com.github.bumptech.glide:annotations:4.12.0'
+
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.12.0'
+
+//Glide支持webp动图的库
+    implementation "com.github.zjupure:webpdecoder:2.0.4.12.0"
+
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //刷新及专场动画
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_22dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_12dp"
+            android:layout_marginEnd="-2dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_gift_vip_bottom"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img_tab"
+            android:layout_width="@dimen/dimen_18dp"
+            android:layout_height="@dimen/dimen_18dp"
+            android:layout_gravity="bottom"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/img_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_12dp"
+            android:layout_marginStart="-2dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/ic_gift_vip_bottom"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/third_text_size" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/fq_hj_float_window_width"
+    android:layout_height="@dimen/fq_hj_float_window_height">
+
+    <RelativeLayout
+        android:id="@+id/rl_box_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fq_hj_float_window_bg">
+
+        <ImageView
+            android:id="@+id/iv_box"
+            android:layout_width="@dimen/fq_hj_float_window_icon_view_size"
+            android:layout_height="@dimen/fq_hj_float_window_icon_view_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fq_hj_float_window_icon_view_margin_top"
+            android:src="@drawable/fq_imgs_box_close" />
+
+        <TextView
+            android:id="@+id/tv_show_tip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fq_hj_float_window_action_view_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/fq_hj_float_window_blue_btn_bg"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/fq_text_black"
+            android:textSize="@dimen/fq_hj_float_window_text_size" />
+
+        <com.slzhibo.library.ui.view.widget.progress.AnimDownloadProgressButton
+            android:id="@+id/fq_loading_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fq_hj_float_window_action_view_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:visibility="invisible"
+            app:progressbtn_background_color="#50a5fe"
+            app:progressbtn_background_second_color="#c3cfdb"
+            app:progressbtn_radius="6"
+            app:progressbtn_text_color="@color/fq_colorWhite"
+            app:progressbtn_text_size="23" />
+    </RelativeLayout>
+</merge>

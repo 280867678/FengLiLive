@@ -1,0 +1,178 @@
+plugins {
+//    id 'com.android.application'
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+//        applicationId "com.slzhibo.library"
+        minSdk 21
+        targetSdk 31
+        versionCode 360
+        versionName "3.6.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        useLibrary 'org.apache.http.legacy'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'x86_64', 'armeabi-v7a', 'armeabi'
+            universalApk false
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+    }
+
+
+/**
+ * Execution failed for task ':app:mergeDebugJavaResource'.
+ > A failure occurred while executing com.android.build.gradle.internal.tasks.MergeJavaResWorkAction
+ > 2 files found with path 'META-INF/rxjava.properties' from inputs:
+ - D:\AS\Android Studio\gradle\caches\transforms-3\d1443fd7a1a0a34939eec70e2a2d3761\transformed\jetified-rxjava-2.0.4.jar
+ - D:\AS\Android Studio\gradle\caches\transforms-3\157ebc6a6f5ee6c9507f5b26e96c42af\transformed\jetified-rxjava-1.1.5.jar
+ Adding a packagingOptions block may help, please refer to
+ */
+    //################ 在这里添加 ##########################//
+    packagingOptions {exclude 'META-INF/rxjava.properties'}
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation files('libs\\YoudaoBase.jar')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout-core:1.0.0-beta03'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation project(path: ':app_tomatoIJK')
+//    implementation project(path: ':app_ijkPlayer')
+    ///////////////////////////////////////////////////////////
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.4'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.projectreactor:reactor-core:3.4.6'
+
+
+
+
+//    implementation 'me.jessyan:arms:2.5.2'
+    implementation 'com.yanzhenjie:permission:2.0.3'
+//    //    # required, enough for most devices.
+//    implementation 'tv.danmaku.ijk.media:ijkplayer-java:0.8.8'
+//    implementation 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8'
+////
+//////    # Other ABIs: optional
+//    implementation 'tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8'
+//    implementation 'tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8'
+//    implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.8.8'
+//    implementation 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8'
+////
+//////    # ExoPlayer as IMediaPlayer: optional, experimental
+//    implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.8.8'
+
+    implementation 'com.facebook.rebound:rebound:0.3.8'
+
+    implementation 'com.tencent.tbs:tbssdk:44181'
+
+    implementation 'com.blankj:utilcode:1.30.0'
+
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+//    implementation 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'org.greenrobot:eventbus:3.0.0'
+
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.github.bumptech.glide:annotations:4.12.0'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:4.12.0'
+    //Glide支持webp动图的库
+    implementation "com.github.zjupure:webpdecoder:2.0.4.12.0"
+
+    implementation 'com.lzy.net:okgo:3.0.4'
+
+    implementation 'io.github.lucksiege:pictureselector:v3.0.9'
+
+
+
+
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+
+
+
+    implementation 'com.github.yyued:SVGAPlayer-Android:2.5.3'
+//    implementation 'com.github.yyued:SVGAPlayer-Android:2.1.9'
+//    implementation 'com.github.svga:SVGAPlayer-Android:2.6.1'
+
+    implementation 'io.agora.rtc:full-sdk:3.5.0'
+
+
+
+
+
+
+
+
+//开源弹幕引擎·烈焰弹幕使（DanmakuFlameMaster）使用解析
+//    implementation 'com.github.ctiao:dfm:0.4.2'
+
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    implementation 'com.github.ctiao:ndkbitmap-armv7a:0.9.21'
+//
+//    # Other ABIs: optional
+    implementation 'com.github.ctiao:ndkbitmap-armv5:0.9.21'
+    implementation 'com.github.ctiao:ndkbitmap-x86:0.9.21'
+
+
+    //刷新及专场动画
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+//    implementation 'com.neovisionaries:nv-websocket-client:2.14'
+    //WebSocket 客户端
+    implementation 'com.neovisionaries:nv-websocket-client:2.2'
+    //WebSocket 服务端
+    implementation "org.java-websocket:Java-WebSocket:1.4.0"
+
+
+
+    // 添加 Sensors Analytics SDK 依赖  神策分析 Android SDK！
+    implementation 'com.sensorsdata.analytics.android:SensorsAnalyticsSDK:4.2.1'
+
+
+//    implementation 'org.litepal.guolindev:core:3.2.3'
+
+}

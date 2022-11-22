@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="116dp"
+    android:layout_height="275dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_control_bg"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:background="@drawable/fq_ic_ly_telecontrol_bg"
+        android:orientation="vertical"
+        android:paddingTop="44dp">
+
+        <TextView
+            android:id="@+id/tv_window_model_1"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/fq_ic_ly_telecontrol_btn_01"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/fq_ly_mode_1"
+            android:textColor="@color/fq_ly_text_black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_window_model_2"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_window_model_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/fq_ic_ly_telecontrol_btn_01"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/fq_ly_mode_2"
+            android:textColor="@color/fq_ly_text_black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_window_model_3"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_window_model_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/fq_ic_ly_telecontrol_btn_01"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/fq_ly_mode_3"
+            android:textColor="@color/fq_ly_text_black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_window_model_custom"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_window_model_3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/fq_ic_ly_telecontrol_btn_03"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/fq_ly_mode_custom"
+            android:textColor="@color/fq_colorWhite"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_free_model_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="#ffdc74"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/iv_show_model_dialog"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/fq_ic_ly_telecontrol_btn_02">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fq_ic_ly_scaling_magnify" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/fq_ic_ly_telecontrol_close" />
+</RelativeLayout>

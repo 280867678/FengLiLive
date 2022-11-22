@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyViewPager">
+        <attr name="canScroll" format="boolean"></attr>
+    </declare-styleable>
+
+    <!--    <declare-styleable name="MultipleStatusLayout">-->
+<!--        <attr name="contentView" format="reference"></attr>-->
+<!--        <attr name="emptyView" format="reference"></attr>-->
+<!--        <attr name="errorView" format="reference"></attr>-->
+<!--        <attr name="loadingView" format="reference"></attr>-->
+<!--        <attr name="noNetworkView" format="reference"></attr>-->
+
+
+<!--    </declare-styleable>-->
+<!--    <declare-styleable name="AutoFlowLayout">-->
+<!--        <attr name="columnNumbers" format="integer"></attr>-->
+<!--        <attr name="cutLine" format="boolean"></attr>-->
+<!--        <attr name="cutLineColor" format="color"></attr>-->
+<!--        <attr name="cutLineWidth" format="dimension"></attr>-->
+<!--        <attr name="horizontalSpace" format="dimension"></attr>-->
+<!--        <attr name="lineCenter" format="boolean"></attr>-->
+<!--        <attr name="maxLines" format="integer"></attr>-->
+<!--        <attr name="multiChecked" format="boolean"></attr>-->
+<!--        <attr name="rowNumbers" format="integer"></attr>-->
+<!--        <attr name="singleLine" format="boolean"></attr>-->
+<!--        <attr name="verticalSpace" format="dimension"></attr>-->
+
+
+<!--    </declare-styleable>-->
+    <declare-styleable name="XBanner">
+        <attr name="AutoPlayTime" format="reference|integer"></attr>
+        <attr name="bannerBottomMargin" format="dimension"></attr>
+        <attr name="clipChildrenLeftRightMargin" format="dimension"></attr>
+        <attr name="clipChildrenTopBottomMargin" format="dimension"></attr>
+        <attr name="indicatorDrawable" format="reference"></attr>
+        <attr name="isAutoPlay" format="boolean"></attr>
+        <attr name="isClipChildrenMode" format="boolean"></attr>
+        <attr name="isClipChildrenModeLessThree" format="boolean"></attr>
+        <attr name="isHandLoop" format="boolean"></attr>
+        <attr name="isShowIndicatorOnlyOne" format="boolean"></attr>
+        <attr name="isShowNumberIndicator" format="boolean"></attr>
+        <attr name="isShowTips" format="boolean"></attr>
+        <attr name="isTipsMarquee" format="boolean"></attr>
+        <attr name="numberIndicatorBacgroud" format="reference"></attr>
+        <attr name="pageChangeDuration" format="integer"></attr>
+        <attr name="placeholderDrawable" format="reference"></attr>
+        <attr name="pointContainerLeftRightPadding" format="dimension"></attr>
+        <attr name="pointContainerPosition">
+            <enum name="BOTTOM" value="12" />
+            <enum name="TOP" value="10" />
+        </attr>
+        <attr name="pointLeftRightPadding" format="dimension"></attr>
+        <attr name="pointNormal" format="reference"></attr>
+        <attr name="pointSelect" format="reference"></attr>
+        <attr name="pointTopBottomPadding" format="dimension"></attr>
+        <attr name="pointsContainerBackground" format="reference|color"></attr>
+        <attr name="pointsPosition">
+            <enum name="center" value="1" />
+            <enum name="left" value="0" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="pointsVisibility" format="boolean"></attr>
+        <attr name="tipTextColor" format="reference|color"></attr>
+        <attr name="tipTextSize" format="dimension"></attr>
+        <attr name="viewpagerMargin" format="dimension"></attr>
+
+
+    </declare-styleable>
+    <declare-styleable name="StateView">
+        <attr name="emptyResource" format="reference"></attr>
+        <attr name="retryResource" format="reference"></attr>
+        <attr name="loadingResource" format="reference"></attr>
+    </declare-styleable>
+    <declare-styleable name="Common_SmartRefreshLayout_Layout">
+        <attr name="common_layout_srlBackgroundColor" format="color"></attr>
+
+        <attr name="common_layout_srlSpinnerStyle">
+            <enum name="FixedBehind" value="2" />
+            <enum name="FixedFront" value="3" />
+            <enum name="MatchLayout" value="4" />
+            <enum name="Scale" value="1" />
+            <enum name="Translate" value="0" />
+        </attr>
+    </declare-styleable>
+
+<!--    <declare-styleable name="Common_SmartRefreshLayout">-->
+
+<!--        <attr name="fq_srlDisableContentWhenLoading" format="boolean"></attr>-->
+<!--        <attr name="fq_srlDisableContentWhenRefresh" format="boolean"></attr>-->
+<!--        <attr name="fq_srlDragRate" format="float"></attr>-->
+<!--        <attr name="fq_srlEnableAutoLoadMore" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableClipFooterWhenFixedBehind" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableClipHeaderWhenFixedBehind" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableFooterFollowWhenLoadFinished" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableFooterFollowWhenNoMoreData" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableFooterTranslationContent" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableHeaderTranslationContent" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableLoadMore" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableLoadMoreWhenContentNotFull" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableNestedScrolling" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableOverScrollBounce" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableOverScrollDrag" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnablePreviewInEditMode" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnablePureScrollMode" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableRefresh" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableScrollContentWhenLoaded" format="boolean"></attr>-->
+<!--        <attr name="fq_srlEnableScrollContentWhenRefreshed" format="boolean"></attr>-->
+<!--        <attr name="fq_srlFixedFooterViewId" format="reference"></attr>-->
+<!--        <attr name="fq_srlFixedHeaderViewId" format="reference"></attr>-->
+<!--        <attr name="fq_srlFooterHeight" format="dimension"></attr>-->
+<!--        <attr name="fq_srlFooterInsetStart" format="dimension"></attr>-->
+<!--        <attr name="fq_srlFooterMaxDragRate" format="float"></attr>-->
+<!--        <attr name="fq_srlFooterTranslationViewId" format="reference"></attr>-->
+<!--        <attr name="fq_srlFooterTriggerRate" format="float"></attr>-->
+<!--        <attr name="fq_srlHeaderHeight" format="dimension"></attr>-->
+<!--        <attr name="fq_srlHeaderInsetStart" format="dimension"></attr>-->
+<!--        <attr name="fq_srlHeaderMaxDragRate" format="float"></attr>-->
+<!--        <attr name="fq_srlHeaderTranslationViewId" format="reference"></attr>-->
+<!--        <attr name="fq_srlHeaderTriggerRate" format="float"></attr>-->
+
+<!--        <attr name="fq_srlReboundDuration" format="integer"></attr>-->
+<!--        <attr name="fq_srlAccentColor2" format="color">-->
+<!--        </attr>-->
+<!--        <attr name="fq_srlPrimaryColor2" format="color">-->
+<!--        </attr>-->
+<!--    </declare-styleable>-->
+<!--    <declare-styleable name="BGABanner">-->
+<!--        <attr name="banner_aspectRatio" format="float"></attr>-->
+<!--        <attr name="banner_contentBottomMargin" format="dimension"></attr>-->
+<!--        <attr name="banner_indicatorGravity">-->
+<!--            <flag name="bottom" value="80" />-->
+<!--            <flag name="center_horizontal" value="1" />-->
+<!--            <flag name="left" value="3" />-->
+<!--            <flag name="right" value="5" />-->
+<!--            <flag name="top" value="48" />-->
+<!--        </attr>-->
+<!--        <attr name="banner_isNeedShowIndicatorOnOnlyOnePage" format="boolean"></attr>-->
+<!--        <attr name="banner_isNumberIndicator" format="boolean"></attr>-->
+<!--        <attr name="banner_numberIndicatorBackground" format="reference"></attr>-->
+<!--        <attr name="banner_numberIndicatorTextColor" format="reference|color"></attr>-->
+<!--        <attr name="banner_numberIndicatorTextSize" format="dimension"></attr>-->
+<!--        <attr name="banner_pageChangeDuration" format="integer"></attr>-->
+<!--        <attr name="banner_placeholderDrawable" format="reference"></attr>-->
+<!--        <attr name="banner_pointAutoPlayAble" format="boolean"></attr>-->
+<!--        <attr name="banner_pointAutoPlayInterval" format="integer"></attr>-->
+<!--        <attr name="banner_pointContainerBackground" format="reference|color"></attr>-->
+<!--        <attr name="banner_pointContainerLeftRightPadding" format="dimension"></attr>-->
+<!--        <attr name="banner_pointDrawable" format="reference"></attr>-->
+<!--        <attr name="banner_pointLeftRightMargin" format="dimension"></attr>-->
+<!--        <attr name="banner_pointTopBottomMargin" format="dimension"></attr>-->
+<!--        <attr name="banner_tipTextColor" format="reference|color"></attr>-->
+<!--        <attr name="banner_tipTextSize" format="dimension"></attr>-->
+<!--        <attr name="banner_transitionEffect">-->
+<!--            <enum name="accordion" value="5" />-->
+<!--            <enum name="alpha" value="1" />-->
+<!--            <enum name="cube" value="3" />-->
+<!--            <enum name="defaultEffect" value="0" />-->
+<!--            <enum name="depth" value="11" />-->
+<!--            <enum name="fade" value="7" />-->
+<!--            <enum name="flip" value="4" />-->
+<!--            <enum name="rotate" value="2" />-->
+<!--            <enum name="stack" value="10" />-->
+<!--            <enum name="zoom" value="12" />-->
+<!--            <enum name="zoomCenter" value="8" />-->
+<!--            <enum name="zoomFade" value="6" />-->
+<!--            <enum name="zoomStack" value="9" />-->
+<!--        </attr>-->
+
+
+<!--    </declare-styleable>-->
+<!--    <declare-styleable name="RoundRelativeLayout">-->
+<!--        <attr name="rlClipBackground" format="boolean"></attr>-->
+<!--        <attr name="rlRadius" format="dimension"></attr>-->
+<!--    </declare-styleable>-->
+
+
+<!--    <declare-styleable name="Common_ClassicsHeader">-->
+<!--        <attr name="fq_srlTextSecondary" format="string"></attr>-->
+<!--        <attr name="fq_srlTextUpdate" format="string"></attr>-->
+<!--        <attr name="fq_srlTextSizeTime" format="dimension"></attr>-->
+<!--        <attr name="fq_srlEnableLastTime" format="boolean"></attr>-->
+<!--        <attr name="fq_srlTextTimeMarginTop" format="dimension"></attr>-->
+<!--        <attr name="fq_srlAccentColor" format="color"></attr>-->
+<!--        <attr name="fq_srlPrimaryColor" format="color"></attr>-->
+
+<!--        <attr name="fq_srlClassicsSpinnerStyle">-->
+<!--            <enum name="FixedBehind" value="2" />-->
+<!--            <enum name="Scale" value="1" />-->
+<!--            <enum name="Translate" value="0" />-->
+<!--        </attr>-->
+<!--        <attr name="fq_srlDrawableProgress" format="reference"></attr>-->
+<!--        <attr name="fq_srlDrawableProgressSize" format="dimension"></attr>-->
+<!--        <attr name="fq_srlDrawableSize" format="dimension"></attr>-->
+<!--        <attr name="fq_srlFinishDuration" format="integer"></attr>-->
+
+<!--        <attr name="fq_srlTextFailed" format="string"></attr>-->
+<!--        <attr name="fq_srlTextFinish" format="string"></attr>-->
+<!--        <attr name="fq_srlTextLoading" format="string"></attr>-->
+<!--        <attr name="fq_srlTextNothing" format="string"></attr>-->
+<!--        <attr name="fq_srlTextPulling" format="string"></attr>-->
+<!--        <attr name="fq_srlTextRefreshing" format="string"></attr>-->
+<!--        <attr name="fq_srlTextRelease" format="string"></attr>-->
+<!--        <attr name="fq_srlTextSizeTitle" format="dimension"></attr>-->
+<!--        <attr name="fq_srlDrawableArrow" format="reference"></attr>-->
+<!--        <attr name="fq_srlDrawableArrowSize" format="dimension"></attr>-->
+<!--        <attr name="fq_srlDrawableMarginRight" format="dimension"></attr>-->
+<!--    </declare-styleable>-->
+
+<!--    <declare-styleable name="Common_ClassicsFooter">-->
+<!--        <attr name="fq_srlAccentColor1" format="color"></attr>-->
+<!--        <attr name="fq_srlPrimaryColor1" format="color"></attr>-->
+
+<!--        <attr name="fq_srlClassicsSpinnerStyle1">-->
+<!--            <enum name="FixedBehind" value="2" />-->
+<!--            <enum name="Scale" value="1" />-->
+<!--            <enum name="Translate" value="0" />-->
+<!--        </attr>-->
+<!--        <attr name="fq_srlDrawableProgress1" format="reference"></attr>-->
+<!--        <attr name="fq_srlDrawableProgressSize1" format="dimension"></attr>-->
+<!--        <attr name="fq_srlDrawableSize1" format="dimension"></attr>-->
+<!--        <attr name="fq_srlFinishDuration1" format="integer"></attr>-->
+
+<!--        <attr name="fq_srlTextFailed1" format="string"></attr>-->
+<!--        <attr name="fq_srlTextFinish1" format="string"></attr>-->
+<!--        <attr name="fq_srlTextLoading1" format="string"></attr>-->
+<!--        <attr name="fq_srlTextNothing1" format="string"></attr>-->
+<!--        <attr name="fq_srlTextPulling1" format="string"></attr>-->
+<!--        <attr name="fq_srlTextRefreshing1" format="string"></attr>-->
+<!--        <attr name="fq_srlTextRelease1" format="string"></attr>-->
+<!--        <attr name="fq_srlTextSizeTitle1" format="dimension"></attr>-->
+<!--        <attr name="fq_srlDrawableArrow1" format="reference"></attr>-->
+<!--        <attr name="fq_srlDrawableArrowSize1" format="dimension"></attr>-->
+<!--        <attr name="fq_srlDrawableMarginRight1" format="dimension"></attr>-->
+<!--    </declare-styleable>-->
+    <declare-styleable name="CircleProgressView">
+        <attr name="cpv_innerBackgroundColor" format="color">
+        </attr>
+        <attr name="cpv_innerPadding" format="dimension">
+        </attr>
+        <attr name="cpv_innerProgressColor" format="color">
+        </attr>
+        <attr name="cpv_outerColor" format="color">
+        </attr>
+        <attr name="cpv_outerSize" format="dimension">
+        </attr>
+        <attr name="cpv_progressNormalColor" format="color">
+        </attr>
+        <attr name="cpv_progressNormalSize" format="dimension">
+        </attr>
+        <attr name="cpv_progressReachColor" format="color">
+        </attr>
+        <attr name="cpv_progressReachSize" format="dimension">
+        </attr>
+        <attr name="cpv_progressStartArc" format="integer">
+        </attr>
+        <attr name="cpv_progressStyle">
+            <enum name="FillInner" value="1" />
+            <enum name="FillInnerArc" value="2" />
+            <enum name="Normal" value="0" />
+        </attr>
+        <attr name="cpv_progressTextColor" format="color">
+        </attr>
+        <attr name="cpv_progressTextOffset" format="dimension">
+        </attr>
+        <attr name="cpv_progressTextPrefix" format="string">
+        </attr>
+        <attr name="cpv_progressTextSize" format="dimension">
+        </attr>
+        <attr name="cpv_progressTextSkewX" format="dimension">
+        </attr>
+        <attr name="cpv_progressTextSuffix" format="string">
+        </attr>
+        <attr name="cpv_progressTextVisible" format="boolean">
+        </attr>
+        <attr name="cpv_radius" format="dimension">
+        </attr>
+        <attr name="cpv_reachCapRound" format="boolean">
+        </attr>
+
+    </declare-styleable>
+
+
+    <!--    <attr name="fq_srlAnimatingColor" format="color">-->
+<!--    </attr>-->
+<!--    <attr name="fq_srlNormalColor" format="color">-->
+<!--    </attr>-->
+<!--    <declare-styleable name="Common_BallPulseFooter">-->
+<!--        <attr name="fq_srlAnimatingColor" />-->
+<!--        <attr name="fq_srlClassicsSpinnerStyle" />-->
+<!--        <attr name="fq_srlNormalColor" />-->
+<!--    </declare-styleable>-->
+<!--    <attr name="fq_srlEnableHorizontalDrag" format="boolean">-->
+<!--    </attr>-->
+<!--    <declare-styleable name="Common_BezierRadarHeader">-->
+<!--        <attr name="fq_srlAccentColor" />-->
+<!--        <attr name="fq_srlEnableHorizontalDrag" />-->
+<!--        <attr name="fq_srlPrimaryColor" />-->
+<!--    </declare-styleable>-->
+
+
+<!--    &lt;!&ndash;    <attr name="actionBarSize" format="dimension">&ndash;&gt;-->
+<!--    &lt;!&ndash;        <enum name="wrap_content" value="0" />&ndash;&gt;-->
+<!--    &lt;!&ndash;    </attr>&ndash;&gt;-->
+
+
+<!--    <array name="WheelArrayDefault">-->
+<!--        <item>AigeStudio</item>-->
+<!--        <item>Aige</item>-->
+<!--        <item>爱哥</item>-->
+<!--        <item>الحب  اخي</item>-->
+<!--        <item>jeg elsker</item>-->
+<!--        <item>사랑해요 형</item>-->
+<!--        <item>Amor de irmão</item>-->
+<!--        <item>armastan</item>-->
+<!--        <item>愛の兄</item>-->
+<!--        <item>обичам те</item>-->
+<!--        <item>любовь - братa</item>-->
+<!--        <item>miłość bracie</item>-->
+<!--        <item>Liebe</item>-->
+<!--        <item>Lamour</item>-->
+<!--        <item>rakastan sinua</item>-->
+<!--        <item>láska..</item>-->
+<!--        <item>dragostea.</item>-->
+<!--        <item>jag älskar</item>-->
+<!--        <item>ljubezen, brat.</item>-->
+<!--        <item>愛哥</item>-->
+<!--        <item>ชอบพี่</item>-->
+<!--        <item>αγάπη μου</item>-->
+<!--        <item>a szerelem.</item>-->
+<!--        <item>Amore, fratello.</item>-->
+<!--    </array>-->
+<!--    <array name="WheelArrayWeek">-->
+<!--        <item>Monday</item>-->
+<!--        <item>Tuesday</item>-->
+<!--        <item>Wednesday</item>-->
+<!--        <item>Thursday</item>-->
+<!--        <item>Friday</item>-->
+<!--        <item>Saturday</item>-->
+<!--        <item>Sunday</item>-->
+<!--    </array>-->
+<!--    <array name="actress_list">-->
+<!--        <item>最近更新</item>-->
+<!--        <item>最多播放</item>-->
+<!--    </array>-->
+<!--    <array name="actress_list_av">-->
+<!--        <item>综合</item>-->
+<!--        <item>最新</item>-->
+<!--        <item>最热</item>-->
+<!--    </array>-->
+<!--    <array name="agent_permission_name">-->
+<!--        <item>免费加盟</item>-->
+<!--        <item>傻瓜式推广</item>-->
+<!--        <item>高额返利</item>-->
+<!--        <item>提现秒达</item>-->
+<!--        <item>财务透明</item>-->
+<!--    </array>-->
+<!--    <array name="audit_name">-->
+<!--        <item>广告水印</item>-->
+<!--        <item>内容违规</item>-->
+<!--        <item>内容重复</item>-->
+<!--        <item>内容无看点</item>-->
+<!--        <item>视频质量差</item>-->
+<!--        <item>无法播放或黑屏</item>-->
+<!--    </array>-->
+<!--    <array name="audit_type">-->
+<!--        <item>10</item>-->
+<!--        <item>20</item>-->
+<!--        <item>21</item>-->
+<!--        <item>22</item>-->
+<!--        <item>30</item>-->
+<!--        <item>31</item>-->
+<!--    </array>-->
+<!--    <array name="banned_text">-->
+<!--        <item>15分钟</item>-->
+<!--        <item>30分钟</item>-->
+<!--        <item>1个小时</item>-->
+<!--        <item>8个小时</item>-->
+<!--        <item>1天</item>-->
+<!--        <item>3天</item>-->
+<!--        <item>7天</item>-->
+<!--        <item>30天</item>-->
+<!--    </array>-->
+<!--    <array name="buys_title">-->
+<!--        <item>长视频</item>-->
+<!--        <item>短视频</item>-->
+<!--    </array>-->
+<!--    <array name="charge_sub_title">-->
+<!--        <item />-->
+<!--        <item />-->
+<!--        <item />-->
+<!--        <item />-->
+<!--    </array>-->
+<!--    <array name="code_buy">-->
+<!--        <item>代理员兑换码</item>-->
+<!--        <item>直播芝麻币</item>-->
+<!--    </array>-->
+<!--    <array name="creator_name">-->
+<!--        <item>最赚钱</item>-->
+<!--        <item>最土豪</item>-->
+<!--        <item>粉丝王</item>-->
+<!--        <item>人气王</item>-->
+<!--    </array>-->
+<!--    <array name="creator_type">-->
+<!--        <item>201</item>-->
+<!--        <item>202</item>-->
+<!--        <item>203</item>-->
+<!--        <item>204</item>-->
+<!--    </array>-->
+<!--    <array name="feedback_ids">-->
+<!--        <item>@null</item>-->
+<!--        <item>1</item>-->
+<!--        <item>4</item>-->
+<!--        <item>5</item>-->
+<!--    </array>-->
+<!--    <array name="feedback_name">-->
+<!--        <item>充值</item>-->
+<!--        <item>影片</item>-->
+<!--        <item>作品上传</item>-->
+<!--        <item>代理推广</item>-->
+<!--        <item>提现</item>-->
+<!--        <item>直播</item>-->
+<!--        <item>游戏</item>-->
+<!--        <item>其他</item>-->
+<!--    </array>-->
+<!--    <array name="feedback_string">-->
+<!--        <item>无法播放</item>-->
+<!--        <item>标题与内容不符</item>-->
+<!--        <item>无字幕或声音</item>-->
+<!--        <item>播放速度慢</item>-->
+<!--    </array>-->
+<!--    <array name="feedback_type">-->
+<!--        <item>300</item>-->
+<!--        <item>301</item>-->
+<!--        <item>302</item>-->
+<!--        <item>303</item>-->
+<!--        <item>304</item>-->
+<!--        <item>305</item>-->
+<!--        <item>306</item>-->
+<!--        <item>307</item>-->
+<!--    </array>-->
+<!--    <array name="filter_age">-->
+<!--        <item>所有年龄</item>-->
+<!--        <item>小于18岁</item>-->
+<!--        <item>18-20</item>-->
+<!--        <item>21-24</item>-->
+<!--        <item>25-27</item>-->
+<!--        <item>28-35</item>-->
+<!--        <item>35+</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area">-->
+<!--        <item>全部地区</item>-->
+<!--        <item>大陆</item>-->
+<!--        <item>日本</item>-->
+<!--        <item>韩国</item>-->
+<!--        <item>欧美</item>-->
+<!--        <item>台湾</item>-->
+<!--        <item>港澳</item>-->
+<!--        <item>东南亚</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area_anime">-->
+<!--        <item>全部地区</item>-->
+<!--        <item>内地</item>-->
+<!--        <item>日本</item>-->
+<!--        <item>欧美</item>-->
+<!--        <item>其他</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area_anime_type">-->
+<!--        <item>@null</item>-->
+<!--        <item>41</item>-->
+<!--        <item>42</item>-->
+<!--        <item>43</item>-->
+<!--        <item>44</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area_movie">-->
+<!--        <item>全部地区</item>-->
+<!--        <item>欧美</item>-->
+<!--        <item>大陆</item>-->
+<!--        <item>港台</item>-->
+<!--        <item>日韩</item>-->
+<!--        <item>其他</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area_movie_type">-->
+<!--        <item>@null</item>-->
+<!--        <item>21</item>-->
+<!--        <item>22</item>-->
+<!--        <item>23</item>-->
+<!--        <item>24</item>-->
+<!--        <item>25</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area_tv">-->
+<!--        <item>全部地区</item>-->
+<!--        <item>国产</item>-->
+<!--        <item>港台</item>-->
+<!--        <item>韩剧</item>-->
+<!--        <item>美剧</item>-->
+<!--        <item>日剧</item>-->
+<!--        <item>英剧</item>-->
+<!--        <item>泰剧</item>-->
+<!--        <item>其他</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area_tv_type">-->
+<!--        <item>@null</item>-->
+<!--        <item>31</item>-->
+<!--        <item>32</item>-->
+<!--        <item>33</item>-->
+<!--        <item>34</item>-->
+<!--        <item>35</item>-->
+<!--        <item>36</item>-->
+<!--        <item>37</item>-->
+<!--        <item>38</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area_variety">-->
+<!--        <item>全部地区</item>-->
+<!--        <item>内地</item>-->
+<!--        <item>日韩</item>-->
+<!--        <item>欧美</item>-->
+<!--        <item>港台</item>-->
+<!--    </array>-->
+<!--    <array name="filter_area_variety_type">-->
+<!--        <item>@null</item>-->
+<!--        <item>51</item>-->
+<!--        <item>52</item>-->
+<!--        <item>53</item>-->
+<!--        <item>54</item>-->
+<!--    </array>-->
+<!--    <array name="filter_av_type">-->
+<!--        <item>AV</item>-->
+<!--        <item>短片</item>-->
+<!--        <item>三级</item>-->
+<!--        <item>动漫</item>-->
+<!--    </array>-->
+<!--    <array name="filter_chinese">-->
+<!--        <item>全部字幕</item>-->
+<!--        <item>中字</item>-->
+<!--        <item>无中字</item>-->
+<!--    </array>-->
+<!--    <array name="filter_free">-->
+<!--        <item>是否收费</item>-->
+<!--        <item>收费</item>-->
+<!--        <item>免费</item>-->
+<!--    </array>-->
+<!--    <array name="filter_mcn">-->
+<!--        <item>播放最多</item>-->
+<!--        <item>片量最多</item>-->
+<!--    </array>-->
+<!--    <array name="filter_moive_type">-->
+<!--        <item>电影</item>-->
+<!--        <item>电视剧</item>-->
+<!--        <item>动漫</item>-->
+<!--        <item>综艺</item>-->
+<!--    </array>-->
+<!--    <array name="filter_more_type">-->
+<!--        <item>最新影片</item>-->
+<!--        <item>最热影片</item>-->
+<!--        <item>最多喜欢</item>-->
+<!--        <item>最高评价</item>-->
+<!--    </array>-->
+<!--    <array name="filter_mosaic">-->
+<!--        <item>有码无码</item>-->
+<!--        <item>有码</item>-->
+<!--        <item>无码</item>-->
+<!--    </array>-->
+<!--    <array name="filter_publish">-->
+<!--        <item>人气最高</item>-->
+<!--        <item>片量最多</item>-->
+<!--    </array>-->
+<!--    <array name="filter_publish_filter">-->
+<!--        <item>最新影片</item>-->
+<!--        <item>最热影片</item>-->
+<!--    </array>-->
+<!--    <array name="filter_time">-->
+<!--        <item>所有片长</item>-->
+<!--        <item>1-5分</item>-->
+<!--        <item>5-10分</item>-->
+<!--        <item>10-20分</item>-->
+<!--        <item>20-30分</item>-->
+<!--        <item>30分以上</item>-->
+<!--    </array>-->
+<!--    <array name="filter_time_long">-->
+<!--        <item>全部时长</item>-->
+<!--        <item>0-10分钟</item>-->
+<!--        <item>11-30分钟</item>-->
+<!--        <item>31-60分钟</item>-->
+<!--        <item>61-120分钟</item>-->
+<!--        <item>120分钟以上</item>-->
+<!--    </array>-->
+<!--    <array name="filter_time_short">-->
+<!--        <item>全部时长</item>-->
+<!--        <item>0-10分钟</item>-->
+<!--        <item>11-20分钟</item>-->
+<!--        <item>21分钟以上</item>-->
+<!--    </array>-->
+<!--    <array name="filter_up">-->
+<!--        <item>播放最多</item>-->
+<!--        <item>片量最多</item>-->
+<!--        <item>粉丝最多</item>-->
+<!--    </array>-->
+<!--    <array name="filter_year">-->
+<!--        <item>全部年份</item>-->
+<!--        <item>2019</item>-->
+<!--        <item>2018</item>-->
+<!--        <item>2017</item>-->
+<!--        <item>2016</item>-->
+<!--        <item>2015</item>-->
+<!--        <item>2014-2010</item>-->
+<!--        <item>00年代</item>-->
+<!--        <item>90年代</item>-->
+<!--        <item>80年代</item>-->
+<!--        <item>更早</item>-->
+<!--    </array>-->
+<!--    <array name="fq_achieve_wear_center_menu">-->
+<!--        <item>发言勋章</item>-->
+<!--    </array>-->
+<!--    <array name="fq_allow_type_menu">-->
+<!--        <item>不允许</item>-->
+<!--        <item>允许</item>-->
+<!--    </array>-->
+<!--    <array name="fq_anchor_live_end_error_tips">-->
+<!--        <item>网络连接已断开，请检查网络设置</item>-->
+<!--        <item>无可用推流服务，请联系管理员</item>-->
+<!--        <item>内容涉嫌违规已被封禁。详询管理员</item>-->
+<!--    </array>-->
+<!--    <array name="fq_appeal_status_tips">-->
+<!--        <item>待处理</item>-->
+<!--        <item>处理中</item>-->
+<!--        <item>已驳回</item>-->
+<!--        <item>已核实</item>-->
+<!--        <item>已取消</item>-->
+<!--    </array>-->
+<!--    <array name="fq_charge_type_menu">-->
+<!--        <item>不收费</item>-->
+<!--        <item>门票房</item>-->
+<!--    </array>-->
+<!--    <array name="fq_date_time_format_label_tips">-->
+<!--        <item>今天</item>-->
+<!--        <item>昨天</item>-->
+<!--    </array>-->
+<!--    <array name="fq_date_time_format_tips">-->
+<!--        <item>今天 %tR</item>-->
+<!--        <item>昨天 %tR</item>-->
+<!--        <item>前天 %tR</item>-->
+<!--        <item>早前 %tR</item>-->
+<!--    </array>-->
+<!--    <array name="fq_given_award_status">-->
+<!--        <item>待确认</item>-->
+<!--        <item>待收货</item>-->
+<!--        <item>已完成</item>-->
+<!--        <item>已过期</item>-->
+<!--    </array>-->
+<!--    <array name="fq_hd_lottery_scope">-->
+<!--        <item>关注主播</item>-->
+<!--        <item>全部观众</item>-->
+<!--    </array>-->
+<!--    <array name="fq_hj_product_action_menu">-->
+<!--        <item>商品上架</item>-->
+<!--        <item>销售数据</item>-->
+<!--        <item>删除商品</item>-->
+<!--    </array>-->
+<!--    <array name="fq_hj_report_type_names">-->
+<!--        <item>违规广告</item>-->
+<!--        <item>封建反动</item>-->
+<!--        <item>血腥暴力</item>-->
+<!--        <item>质量较差</item>-->
+<!--    </array>-->
+<!--    <array name="fq_home_ranking_menu">-->
+<!--        <item>魅力榜</item>-->
+<!--        <item>富豪榜</item>-->
+<!--        <item>周星榜</item>-->
+<!--        <item>带货达人</item>-->
+<!--    </array>-->
+<!--    <array name="fq_indexable_rv_letter">-->
+<!--        <item>A</item>-->
+<!--        <item>B</item>-->
+<!--        <item>C</item>-->
+<!--        <item>D</item>-->
+<!--        <item>E</item>-->
+<!--        <item>F</item>-->
+<!--        <item>G</item>-->
+<!--        <item>H</item>-->
+<!--        <item>I</item>-->
+<!--        <item>J</item>-->
+<!--        <item>K</item>-->
+<!--        <item>L</item>-->
+<!--        <item>M</item>-->
+<!--        <item>N</item>-->
+<!--        <item>O</item>-->
+<!--        <item>P</item>-->
+<!--        <item>Q</item>-->
+<!--        <item>R</item>-->
+<!--        <item>S</item>-->
+<!--        <item>T</item>-->
+<!--        <item>U</item>-->
+<!--        <item>V</item>-->
+<!--        <item>W</item>-->
+<!--        <item>X</item>-->
+<!--        <item>Y</item>-->
+<!--        <item>Z</item>-->
+<!--    </array>-->
+<!--    <array name="fq_live_end_score_1_tips">-->
+<!--        <item>言辞不当</item>-->
+<!--        <item>污言秽语</item>-->
+<!--        <item>不是本人</item>-->
+<!--        <item>广告植入</item>-->
+<!--        <item>傲慢无礼</item>-->
+<!--        <item>难见真容</item>-->
+<!--        <item>没声音</item>-->
+<!--        <item>被骗了</item>-->
+<!--    </array>-->
+<!--    <array name="fq_live_end_score_2_tips">-->
+<!--        <item>耍无赖</item>-->
+<!--        <item>不真心</item>-->
+<!--        <item>冷言冷语</item>-->
+<!--        <item>龟速信号</item>-->
+<!--        <item>所求无度</item>-->
+<!--        <item>与本人不符</item>-->
+<!--        <item>无信号</item>-->
+<!--        <item>画面杂乱</item>-->
+<!--    </array>-->
+<!--    <array name="fq_live_end_score_3_tips">-->
+<!--        <item>无趣</item>-->
+<!--        <item>腹黑</item>-->
+<!--        <item>尬聊</item>-->
+<!--        <item>戏精</item>-->
+<!--        <item>高冷</item>-->
+<!--        <item>画质模糊</item>-->
+<!--        <item>不和心意</item>-->
+<!--        <item>定价过高</item>-->
+<!--    </array>-->
+<!--    <array name="fq_live_end_score_4_tips">-->
+<!--        <item>佛系少女</item>-->
+<!--        <item>绝美女音</item>-->
+<!--        <item>邻家女孩</item>-->
+<!--        <item>可爱萝莉</item>-->
+<!--        <item>女汉子</item>-->
+<!--        <item>软妹子</item>-->
+<!--        <item>萌妹子</item>-->
+<!--        <item>气质熟女</item>-->
+<!--    </array>-->
+<!--    <array name="fq_live_end_score_5_tips">-->
+<!--        <item>知性大方</item>-->
+<!--        <item>人美歌甜</item>-->
+<!--        <item>风情万种</item>-->
+<!--        <item>完美身材</item>-->
+<!--        <item>秀色可餐</item>-->
+<!--        <item>丰满诱人</item>-->
+<!--        <item>期待再会</item>-->
+<!--        <item>疯狂打call</item>-->
+<!--    </array>-->
+<!--    <array name="fq_live_end_score_menu">-->
+<!--        <item>很不满意</item>-->
+<!--        <item>不是很满意</item>-->
+<!--        <item>一般般</item>-->
+<!--        <item>比较满意</item>-->
+<!--        <item>非常满意</item>-->
+<!--    </array>-->
+<!--    <array name="fq_live_more_menu">-->
+<!--        <item>多语言翻译</item>-->
+<!--        <item>私信</item>-->
+<!--        <item>播放线路切换</item>-->
+<!--        <item>亲密互动</item>-->
+<!--        <item>连麦</item>-->
+<!--        <item>商品货架</item>-->
+<!--        <item>远程蓝牙</item>-->
+<!--        <item>主播名片</item>-->
+<!--    </array>-->
+<!--    <array name="fq_live_status_menu">-->
+<!--        <item>全部</item>-->
+<!--        <item>开播中</item>-->
+<!--        <item>未开播</item>-->
+<!--    </array>-->
+<!--    <array name="fq_lottery_ticket_gold">-->
+<!--        <item>1</item>-->
+<!--        <item>10</item>-->
+<!--        <item>100</item>-->
+<!--        <item>20</item>-->
+<!--        <item>200</item>-->
+<!--        <item>2000</item>-->
+<!--    </array>-->
+<!--    <array name="fq_lottery_ticket_tips">-->
+<!--        <item>消耗%s元，获取1次抽奖机会，每日首抽必中</item>-->
+<!--        <item>消耗%s元，获取10次抽奖机会，必中蓝色区域</item>-->
+<!--        <item>消耗%s元，获取100次抽奖机会，必中红色区域</item>-->
+<!--        <item>消耗%s元，获取1次抽奖机会，每日首抽必中</item>-->
+<!--        <item>消耗%s元，获取10次抽奖机会，必中蓝色区域</item>-->
+<!--        <item>消耗%s元，获取100次抽奖机会，必中红色区域</item>-->
+<!--    </array>-->
+<!--    <array name="fq_ml_hot_city">-->
+<!--        <item>北京</item>-->
+<!--        <item>上海</item>-->
+<!--        <item>广州</item>-->
+<!--        <item>深圳</item>-->
+<!--        <item>杭州</item>-->
+<!--        <item>南京</item>-->
+<!--        <item>苏州</item>-->
+<!--        <item>重庆</item>-->
+<!--    </array>-->
+<!--    <array name="fq_ml_overseas_hot_city">-->
+<!--        <item>香港</item>-->
+<!--        <item>澳门</item>-->
+<!--        <item>台湾</item>-->
+<!--        <item>美国</item>-->
+<!--        <item>日本</item>-->
+<!--        <item>韩国</item>-->
+<!--        <item>泰国</item>-->
+<!--        <item>缅甸</item>-->
+<!--    </array>-->
+<!--    <array name="fq_ml_ranking_menu">-->
+<!--        <item>密友榜</item>-->
+<!--        <item>富豪榜</item>-->
+<!--        <item>魅力榜</item>-->
+<!--    </array>-->
+<!--    <array name="fq_ml_report">-->
+<!--        <item>加入黑名单</item>-->
+<!--        <item>移除黑名单</item>-->
+<!--        <item>举报</item>-->
+<!--    </array>-->
+<!--    <array name="fq_ml_report_content">-->
+<!--        <item>色情低俗</item>-->
+<!--        <item>广告骚扰</item>-->
+<!--        <item>谣言</item>-->
+<!--        <item>政治敏感</item>-->
+<!--        <item>侵权</item>-->
+<!--        <item>暴力恐怖，违禁品</item>-->
+<!--        <item>欺诈骗钱</item>-->
+<!--    </array>-->
+<!--    <array name="fq_ml_report_key">-->
+<!--        <item>1</item>-->
+<!--        <item>2</item>-->
+<!--        <item>3</item>-->
+<!--        <item>4</item>-->
+<!--        <item>5</item>-->
+<!--        <item>6</item>-->
+<!--        <item>7</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_h5_url">-->
+<!--        <item>noble-open-notice.html</item>-->
+<!--        <item>noble-open-effects.html</item>-->
+<!--        <item>noble-join-welcome.html</item>-->
+<!--        <item>noble-medal.html</item>-->
+<!--        <item>noble-card.html</item>-->
+<!--        <item>noble-level-speed.html</item>-->
+<!--        <item>noble-horn.html</item>-->
+<!--        <item>noble-danmu.html</item>-->
+<!--        <item>noble-service.html</item>-->
+<!--        <item>noble-custom-gift.html</item>-->
+<!--        <item>noble-not-speak-out.html</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_money_use_tips">-->
+<!--        <item>贵族币使用说明</item>-->
+<!--        <item>1.贵族币与平台虚拟币等值，可用来送礼物、开守护、买座驾，其中送礼物和开守护后主播能获得收益；使用虚拟币时会优先使用贵族币。\n\n</item>-->
+<!--        <item>2.贵族币永久有效，但贵族过期后未使用完的贵族币将被冻结，续费贵族或开通任意等级贵族后均可解冻贵族币。\n\n</item>-->
+<!--        <item>3.贵族币不能用以购买贵族。\n\n</item>-->
+<!--        <item>4.购买贵族赠送的贵族币在购买后立即到账。</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_name">-->
+<!--        <item>游侠</item>-->
+<!--        <item>骑士</item>-->
+<!--        <item>子爵</item>-->
+<!--        <item>伯爵</item>-->
+<!--        <item>公爵</item>-->
+<!--        <item>国王</item>-->
+<!--        <item>皇帝</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_open_status_tips">-->
+<!--        <item>生效中</item>-->
+<!--        <item>续费保护期</item>-->
+<!--        <item>已过期</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_pay_tips">-->
+<!--        <item>开通皇帝贵族</item>-->
+<!--        <item>开通国王贵族</item>-->
+<!--        <item>开通公爵贵族</item>-->
+<!--        <item>开通伯爵贵族</item>-->
+<!--        <item>开通子爵贵族</item>-->
+<!--        <item>开通骑士贵族</item>-->
+<!--        <item>开通游侠贵族</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_tips">-->
+<!--        <item>开通特效</item>-->
+<!--        <item>贵族名片</item>-->
+<!--        <item>贵族勋章</item>-->
+<!--        <item>进场欢迎</item>-->
+<!--        <item>开通广播</item>-->
+<!--        <item>升级加速</item>-->
+<!--        <item>平台喇叭</item>-->
+<!--        <item>贵族弹幕</item>-->
+<!--        <item>进场隐身</item>-->
+<!--        <item>榜单隐身</item>-->
+<!--        <item>防禁言</item>-->
+<!--        <item>定制礼物</item>-->
+<!--        <item>专属客服</item>-->
+<!--        <item>置顶直播间</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_tips_desc_1">-->
+<!--        <item>房间内开通横幅</item>-->
+<!--        <item>贵族专属用户名片</item>-->
+<!--        <item>游侠专属标识</item>-->
+<!--        <item>进场显示贵族欢迎语</item>-->
+<!--        <item>开通时房间内广播消息</item>-->
+<!--        <item>骑士及以上等级贵族拥有</item>-->
+<!--        <item>发出后全平台可见</item>-->
+<!--        <item>发言消息脱颖而出</item>-->
+<!--        <item>低调看直播</item>-->
+<!--        <item>神秘低调，默默守护主播</item>-->
+<!--        <item>皇帝无法被房管禁言</item>-->
+<!--        <item>定制属于你的礼物道具</item>-->
+<!--        <item>24小时服务</item>-->
+<!--        <item>推荐主播上热门</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_tips_desc_2">-->
+<!--        <item>房间内开通横幅</item>-->
+<!--        <item>贵族专属用户名片</item>-->
+<!--        <item>骑士专属标识</item>-->
+<!--        <item>进场显示贵族欢迎语</item>-->
+<!--        <item>开通时房间内广播消息</item>-->
+<!--        <item>送礼物经验加速10%</item>-->
+<!--        <item>发出后全平台可见</item>-->
+<!--        <item>发言消息脱颖而出</item>-->
+<!--        <item>低调看直播</item>-->
+<!--        <item>神秘低调，默默守护主播</item>-->
+<!--        <item>皇帝无法被房管禁言</item>-->
+<!--        <item>定制属于你的礼物道具</item>-->
+<!--        <item>24小时服务</item>-->
+<!--        <item>推荐主播上热门</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_tips_desc_3">-->
+<!--        <item>房间内开通横幅/开通特效</item>-->
+<!--        <item>贵族专属用户名片</item>-->
+<!--        <item>子爵专属标识</item>-->
+<!--        <item>进场显示贵族欢迎语</item>-->
+<!--        <item>开通时房间内广播消息</item>-->
+<!--        <item>送礼物经验加速12%</item>-->
+<!--        <item>发出后全平台可见</item>-->
+<!--        <item>发言消息脱颖而出</item>-->
+<!--        <item>低调看直播</item>-->
+<!--        <item>神秘低调，默默守护主播</item>-->
+<!--        <item>皇帝无法被房管禁言</item>-->
+<!--        <item>定制属于你的礼物道具</item>-->
+<!--        <item>24小时服务</item>-->
+<!--        <item>推荐主播上热门</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_tips_desc_4">-->
+<!--        <item>房间内开通横幅/开通特效</item>-->
+<!--        <item>贵族专属用户名片</item>-->
+<!--        <item>伯爵专属标识</item>-->
+<!--        <item>进场显示贵族欢迎语</item>-->
+<!--        <item>开通/续费时全平台广播消息</item>-->
+<!--        <item>送礼物经验加速14%</item>-->
+<!--        <item>赠送3个平台喇叭</item>-->
+<!--        <item>发言消息脱颖而出</item>-->
+<!--        <item>低调看直播</item>-->
+<!--        <item>神秘低调，默默守护主播</item>-->
+<!--        <item>皇帝无法被房管禁言</item>-->
+<!--        <item>定制属于你的礼物道具</item>-->
+<!--        <item>24小时服务</item>-->
+<!--        <item>推荐主播上热门</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_tips_desc_5">-->
+<!--        <item>房间内开通横幅/开通特效</item>-->
+<!--        <item>贵族专属用户名片</item>-->
+<!--        <item>公爵专属标识</item>-->
+<!--        <item>进场显示高级贵族特效</item>-->
+<!--        <item>开通/续费时全平台广播消息</item>-->
+<!--        <item>送礼物经验加速16%</item>-->
+<!--        <item>赠送5个平台喇叭</item>-->
+<!--        <item>发言消息脱颖而出</item>-->
+<!--        <item>低调看直播</item>-->
+<!--        <item>神秘低调，默默守护主播</item>-->
+<!--        <item>皇帝无法被房管禁言</item>-->
+<!--        <item>定制属于你的礼物道具</item>-->
+<!--        <item>24小时服务</item>-->
+<!--        <item>推荐主播上热门</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_tips_desc_6">-->
+<!--        <item>房间内开通横幅/开通特效</item>-->
+<!--        <item>贵族专属用户名片</item>-->
+<!--        <item>国王专属标识</item>-->
+<!--        <item>进场显示高级贵族特效</item>-->
+<!--        <item>开通/续费时全平台广播消息</item>-->
+<!--        <item>送礼物经验加速18%</item>-->
+<!--        <item>赠送10个平台喇叭</item>-->
+<!--        <item>发言消息脱颖而出</item>-->
+<!--        <item>低调看直播</item>-->
+<!--        <item>神秘低调，默默守护主播</item>-->
+<!--        <item>皇帝无法被房管禁言</item>-->
+<!--        <item>定制属于你的礼物道具</item>-->
+<!--        <item>24小时服务</item>-->
+<!--        <item>推荐主播上热门</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_open_tips_desc_7">-->
+<!--        <item>房间内开通横幅/开通特效</item>-->
+<!--        <item>贵族专属用户名片</item>-->
+<!--        <item>皇帝专属标识</item>-->
+<!--        <item>进场显示高级贵族特效</item>-->
+<!--        <item>开通/续费时全平台广播消息</item>-->
+<!--        <item>送礼物经验加速20%</item>-->
+<!--        <item>赠送20个平台喇叭</item>-->
+<!--        <item>发言消息脱颖而出</item>-->
+<!--        <item>低调看直播</item>-->
+<!--        <item>神秘低调，默默守护主播</item>-->
+<!--        <item>皇帝无法被房管禁言</item>-->
+<!--        <item>定制属于你的礼物道具</item>-->
+<!--        <item>24小时服务</item>-->
+<!--        <item>推荐主播上热门</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_renew_pay_tips">-->
+<!--        <item>续费皇帝贵族</item>-->
+<!--        <item>续费国王贵族</item>-->
+<!--        <item>续费公爵贵族</item>-->
+<!--        <item>续费伯爵贵族</item>-->
+<!--        <item>续费子爵贵族</item>-->
+<!--        <item>续费骑士贵族</item>-->
+<!--        <item>续费游侠贵族</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_privilege_tips">-->
+<!--        <item>开通通知</item>-->
+<!--        <item>开通特效</item>-->
+<!--        <item>进场欢迎</item>-->
+<!--        <item>贵族勋章</item>-->
+<!--        <item>贵族用户名片</item>-->
+<!--        <item>升级加速</item>-->
+<!--        <item>平台喇叭</item>-->
+<!--        <item>贵族弹幕</item>-->
+<!--        <item>专属客服</item>-->
+<!--        <item>定制礼物</item>-->
+<!--        <item>防禁言/踢出</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_recommend_history_status">-->
+<!--        <item>推荐中</item>-->
+<!--        <item>已过期</item>-->
+<!--    </array>-->
+<!--    <array name="fq_nobility_recommend_history_type">-->
+<!--        <item>匿名推荐</item>-->
+<!--        <item>公开推荐</item>-->
+<!--    </array>-->
+<!--    <array name="fq_private_msg_shortcut_tips">-->
+<!--        <item>你好，我们可以开始沟通啦！</item>-->
+<!--        <item>请暂时不要退出直播间，否则会收不到我的消息哟~</item>-->
+<!--        <item>收到！</item>-->
+<!--    </array>-->
+<!--    <array name="fq_qm_more_menu">-->
+<!--        <item>玩法说明</item>-->
+<!--        <item>互动记录</item>-->
+<!--    </array>-->
+<!--    <array name="fq_qm_record_status">-->
+<!--        <item>执行中</item>-->
+<!--        <item>已完成</item>-->
+<!--        <item>已拒绝</item>-->
+<!--        <item>超时</item>-->
+<!--    </array>-->
+<!--    <array name="fq_relation_type_menu">-->
+<!--        <item>不关联</item>-->
+<!--        <item>关联</item>-->
+<!--    </array>-->
+<!--    <array name="fq_search_tab_menu">-->
+<!--        <item>全部</item>-->
+<!--        <item>主播</item>-->
+<!--        <item>直播</item>-->
+<!--    </array>-->
+<!--    <array name="fq_time_picker_time_label_menu">-->
+<!--        <item>年</item>-->
+<!--        <item>月</item>-->
+<!--        <item>日</item>-->
+<!--        <item>时</item>-->
+<!--        <item>分</item>-->
+<!--        <item>秒</item>-->
+<!--    </array>-->
+<!--    <array name="fq_week_star_anchor_reward">-->
+<!--        <item>周星封面挂件</item>-->
+<!--        <item>周星直播间挂件</item>-->
+<!--        <item>顶级推荐位</item>-->
+<!--        <item>人气卡x2</item>-->
+<!--    </array>-->
+<!--    <array name="fq_week_star_live_tab">-->
+<!--        <item>周星主播榜</item>-->
+<!--        <item>周星富豪榜</item>-->
+<!--    </array>-->
+<!--    <array name="fq_week_star_user_reward">-->
+<!--        <item>周星徽章x7天</item>-->
+<!--        <item>周星礼物冠名x7天</item>-->
+<!--        <item>周星座驾x7天</item>-->
+<!--    </array>-->
+<!--    <array name="fq_write_address_award_tips">-->
+<!--        <item>7天内未点击“填写收货信息”将收货信息发送给主播则视为放弃奖品；如若防线奖品未送达、奖品违规，请及时通过页面右上角联系客服进行举报。</item>-->
+<!--        <item>用户7天内未将收奖信息发送给主播则视为放弃奖品；如若发现信息不明确、信息违规，请及时联系用户修改。若故意延期发奖或其它违规行为，核实后将对主播进行处罚。</item>-->
+<!--    </array>-->
+<!--    <array name="fq_write_address_tips">-->
+<!--        <item>填写收货信息</item>-->
+<!--        <item>已填写，等待主播发货</item>-->
+<!--        <item>主播已发奖</item>-->
+<!--        <item>超时未填写，已关闭</item>-->
+<!--    </array>-->
+<!--    <array name="fq_write_address_tips_2">-->
+<!--        <item>提醒对方填写收奖信息</item>-->
+<!--        <item>已填写，确认发货</item>-->
+<!--        <item>我已发奖</item>-->
+<!--        <item>已超时</item>-->
+<!--    </array>-->
+<!--    <array name="fq_yy_link_action_menu">-->
+<!--        <item>点赞</item>-->
+<!--        <item>查看资料</item>-->
+<!--    </array>-->
+<!--    <array name="fq_yy_link_action_menu_2">-->
+<!--        <item>静音</item>-->
+<!--        <item>查看资料</item>-->
+<!--    </array>-->
+<!--    <array name="game_name">-->
+<!--        <item>玩游戏</item>-->
+<!--        <item>全民推广</item>-->
+<!--        <item>专属代理</item>-->
+<!--        <item>我的直播</item>-->
+<!--        <item>楼凤专区</item>-->
+<!--        <item>如何赚钱</item>-->
+<!--        <item>领取身份卡</item>-->
+<!--    </array>-->
+<!--    <array name="game_type">-->
+<!--        <item>100</item>-->
+<!--        <item>101</item>-->
+<!--        <item>102</item>-->
+<!--        <item>103</item>-->
+<!--        <item>104</item>-->
+<!--        <item>105</item>-->
+<!--        <item>106</item>-->
+<!--    </array>-->
+<!--    <array name="gplus_colors">-->
+<!--        <item>@color/gplus_color_1</item>-->
+<!--        <item>@color/gplus_color_2</item>-->
+<!--        <item>@color/gplus_color_3</item>-->
+<!--        <item>@color/gplus_color_4</item>-->
+<!--    </array>-->
+<!--    <array name="little_video_tab">-->
+<!--        <item>热门</item>-->
+<!--        <item>关注</item>-->
+<!--        <item>推荐</item>-->
+<!--    </array>-->
+<!--    <array name="live_more_menu_lottery_title">-->
+<!--        <item>亲密互动</item>-->
+<!--    </array>-->
+<!--    <array name="live_more_menu_title">-->
+<!--        <item>美化</item>-->
+<!--        <item>麦克风</item>-->
+<!--        <item>闪光灯</item>-->
+<!--        <item>大字幕</item>-->
+<!--        <item>镜像</item>-->
+<!--        <item>发言设置</item>-->
+<!--        <item>修改主题</item>-->
+<!--        <item>贴片控件</item>-->
+<!--        <item>屏蔽小礼物</item>-->
+<!--        <item>人气卡</item>-->
+<!--        <item>付费设置</item>-->
+<!--    </array>-->
+<!--    <array name="main_tab">-->
+<!--        <item>最新</item>-->
+<!--        <item>排行</item>-->
+<!--    </array>-->
+<!--    <array name="mylist_name">-->
+<!--        <item>离线缓存</item>-->
+<!--        <item>播放记录</item>-->
+<!--        <item>我的收藏</item>-->
+<!--        <item>我的购买</item>-->
+<!--    </array>-->
+<!--    <array name="mylist_type">-->
+<!--        <item>@null</item>-->
+<!--        <item>1</item>-->
+<!--        <item>2</item>-->
+<!--        <item>3</item>-->
+<!--    </array>-->
+<!--    <array name="mywallet_list">-->
+<!--        <item>推广收益榜</item>-->
+<!--        <item>待推广好友</item>-->
+<!--    </array>-->
+<!--    <array name="pay_tab">-->
+<!--        <item>客服充值</item>-->
+<!--        <item>在线充值</item>-->
+<!--    </array>-->
+<!--    <array name="pay_type">-->
+<!--        <item>1</item>-->
+<!--        <item>2</item>-->
+<!--        <item>2</item>-->
+<!--        <item>3</item>-->
+<!--        <item>3</item>-->
+<!--        <item>5</item>-->
+<!--        <item>5</item>-->
+<!--        <item>6</item>-->
+<!--        <item>6</item>-->
+<!--        <item>7</item>-->
+<!--        <item>7</item>-->
+<!--        <item>8</item>-->
+<!--        <item>8</item>-->
+<!--        <item>9</item>-->
+<!--        <item>9</item>-->
+<!--        <item>4</item>-->
+<!--        <item>11</item>-->
+<!--        <item>10</item>-->
+<!--        <item>10</item>-->
+<!--    </array>-->
+<!--    <array name="payment_name">-->
+<!--        <item>人工充值</item>-->
+<!--        <item>支付宝</item>-->
+<!--        <item>支付宝定额</item>-->
+<!--        <item>微信</item>-->
+<!--        <item>微信定额</item>-->
+<!--        <item>银联</item>-->
+<!--        <item>银联定额</item>-->
+<!--        <item>QQ钱包</item>-->
+<!--        <item>QQ钱包定额</item>-->
+<!--        <item>京东</item>-->
+<!--        <item>京东定额</item>-->
+<!--        <item>番茄支付</item>-->
+<!--        <item>番茄支付定额</item>-->
+<!--        <item>云闪付</item>-->
+<!--        <item>云闪付定额</item>-->
+<!--        <item>钱包支付</item>-->
+<!--        <item>自助充值-Potato支付</item>-->
+<!--        <item>USDT</item>-->
+<!--        <item>USDT定额</item>-->
+<!--    </array>-->
+<!--    <array name="payment_type">-->
+<!--        <item>AGENT</item>-->
+<!--        <item>ALIPAY</item>-->
+<!--        <item>ALIPAY_D</item>-->
+<!--        <item>WECHAT</item>-->
+<!--        <item>WECHAT_D</item>-->
+<!--        <item>UNIONPAY</item>-->
+<!--        <item>UNIONPAY_D</item>-->
+<!--        <item>QQPAY</item>-->
+<!--        <item>QQPAY_D</item>-->
+<!--        <item>JDPAY</item>-->
+<!--        <item>JDPAY_D</item>-->
+<!--        <item>TOMATO</item>-->
+<!--        <item>TOMATO_D</item>-->
+<!--        <item>CLOUDFLASHPAY</item>-->
+<!--        <item>CLOUDFLASHPAY_D</item>-->
+<!--        <item>BALANCE</item>-->
+<!--        <item>POTATO</item>-->
+<!--        <item>DCPAY</item>-->
+<!--        <item>DCPAY_D</item>-->
+<!--    </array>-->
+<!--    <array name="person_name">-->
+<!--        <item>离线缓存</item>-->
+<!--        <item>播放记录</item>-->
+<!--        <item>我的喜欢</item>-->
+<!--        <item>我的购买</item>-->
+<!--        <item>我的作品</item>-->
+<!--        <item>求片推片</item>-->
+<!--        <item>创作中心</item>-->
+<!--        <item>创作交流群</item>-->
+<!--    </array>-->
+<!--    <array name="person_type">-->
+<!--        <item>@null</item>-->
+<!--        <item>1</item>-->
+<!--        <item>2</item>-->
+<!--        <item>3</item>-->
+<!--        <item>4</item>-->
+<!--        <item>5</item>-->
+<!--        <item>6</item>-->
+<!--        <item>7</item>-->
+<!--    </array>-->
+<!--    <array name="phone_country_code_key">-->
+<!--        <item>82</item>-->
+<!--        <item>86</item>-->
+<!--        <item>81</item>-->
+<!--        <item>66</item>-->
+<!--        <item>1</item>-->
+<!--    </array>-->
+<!--    <array name="phone_country_code_value">-->
+<!--        <item>韩国（+82）</item>-->
+<!--        <item>中国大陆（+86）</item>-->
+<!--        <item>日本（+81）</item>-->
+<!--        <item>泰国（+66）</item>-->
+<!--        <item>美国（+1）</item>-->
+<!--    </array>-->
+<!--    <array name="purchase_half_years">-->
+<!--        <item />-->
+<!--        <item>#</item>-->
+<!--        <item>#</item>-->
+<!--        <item>180天</item>-->
+<!--        <item>180天</item>-->
+<!--        <item>180天</item>-->
+<!--    </array>-->
+<!--    <array name="purchase_months">-->
+<!--        <item />-->
+<!--        <item>#</item>-->
+<!--        <item>#</item>-->
+<!--        <item>30天</item>-->
+<!--        <item>30天</item>-->
+<!--        <item>30天</item>-->
+<!--    </array>-->
+<!--    <array name="purchase_name">-->
+<!--        <item>费用</item>-->
+<!--        <item>提现功能</item>-->
+<!--        <item>5级返佣特权</item>-->
+<!--        <item>无限观影</item>-->
+<!--        <item>超清画质</item>-->
+<!--        <item>缓存权限</item>-->
+<!--    </array>-->
+<!--    <array name="purchase_promotion">-->
+<!--        <item>最超值</item>-->
+<!--        <item>#</item>-->
+<!--        <item>#</item>-->
+<!--        <item>永久</item>-->
+<!--        <item>永久</item>-->
+<!--        <item>永久</item>-->
+<!--    </array>-->
+<!--    <array name="purchase_years">-->
+<!--        <item />-->
+<!--        <item>#</item>-->
+<!--        <item>#</item>-->
+<!--        <item>360天</item>-->
+<!--        <item>360天</item>-->
+<!--        <item>360天</item>-->
+<!--    </array>-->
+<!--    <array name="search_tab_title">-->
+<!--        <item>@string/tab_title_long_video</item>-->
+<!--        <item>@string/tab_title_short_video</item>-->
+<!--        <item>@string/tab_title_user</item>-->
+<!--    </array>-->
+<!--    <array name="search_tag_list">-->
+<!--        <item>醉酒</item>-->
+<!--        <item>醉酒</item>-->
+<!--        <item>我想带你其烤肉饭</item>-->
+<!--        <item>我带你其烤肉饭就疯了</item>-->
+<!--        <item>烤肉饭就疯了</item>-->
+<!--        <item>烤肉饭就疯了</item>-->
+<!--        <item>我带你其烤肉饭就疯了</item>-->
+<!--    </array>-->
+<!--    <array name="set_icon_list">-->
+<!--        <item>com.seven.movie.splash.mvp.ui.activity.SplashActivity2</item>-->
+<!--        <item>com.seven.movie.splash.mvp.ui.activity.Splash1Activity</item>-->
+<!--        <item>com.seven.movie.splash.mvp.ui.activity.Splash2Activity</item>-->
+<!--        <item>com.seven.movie.splash.mvp.ui.activity.Splash3Activity</item>-->
+<!--        <item>com.seven.movie.splash.mvp.ui.activity.Splash4Activity</item>-->
+<!--        <item>com.seven.movie.splash.mvp.ui.activity.Splash5Activity</item>-->
+<!--    </array>-->
+<!--    <array name="ssvip_des">-->
+<!--        <item>楼凤专车预约</item>-->
+<!--        <item>付费视频(免费)</item>-->
+<!--        <item>至尊标识</item>-->
+<!--        <item>至尊专属活动</item>-->
+<!--        <item>视频置顶</item>-->
+<!--        <item>社区门票</item>-->
+<!--        <item>私信功能</item>-->
+<!--        <item>个性头像</item>-->
+<!--        <item>互动评论</item>-->
+<!--        <item>无限观影</item>-->
+<!--        <item>无限下载</item>-->
+<!--        <item>投屏</item>-->
+<!--    </array>-->
+<!--    <array name="sv_tab">-->
+<!--        <item>最新</item>-->
+<!--        <item>排行</item>-->
+<!--    </array>-->
+<!--    <array name="svip_des">-->
+<!--        <item>楼凤专车预约</item>-->
+<!--        <item>付费视频(5折)</item>-->
+<!--        <item>SVIP标识</item>-->
+<!--        <item>SVIP专属活动</item>-->
+<!--        <item>视频置顶</item>-->
+<!--        <item>社区门票</item>-->
+<!--        <item>私信功能</item>-->
+<!--        <item>个性头像</item>-->
+<!--        <item>互动评论</item>-->
+<!--        <item>无限观影</item>-->
+<!--        <item>无限下载</item>-->
+<!--        <item>投屏</item>-->
+<!--    </array>-->
+<!--    <array name="take_photo_text">-->
+<!--        <item>拍照</item>-->
+<!--        <item>本地获取</item>-->
+<!--    </array>-->
+<!--    <array name="transaction_type">-->
+<!--        <item>-1</item>-->
+<!--        <item>3</item>-->
+<!--        <item>10</item>-->
+<!--        <item>11</item>-->
+<!--        <item>15</item>-->
+<!--        <item>26</item>-->
+<!--        <item>12</item>-->
+<!--        <item>@null</item>-->
+<!--        <item>13</item>-->
+<!--        <item>20</item>-->
+<!--        <item>40</item>-->
+<!--        <item>24</item>-->
+<!--        <item>54</item>-->
+<!--    </array>-->
+<!--    <array name="transaction_type_name">-->
+<!--        <item>全部</item>-->
+<!--        <item>主播收益</item>-->
+<!--        <item>充值</item>-->
+<!--        <item>提现退款</item>-->
+<!--        <item>游戏下分</item>-->
+<!--        <item>APP收益</item>-->
+<!--        <item>钱包支付</item>-->
+<!--        <item>提现</item>-->
+<!--        <item>游戏上分</item>-->
+<!--        <item>直播消费</item>-->
+<!--        <item>活动奖励</item>-->
+<!--        <item>代理收益</item>-->
+<!--        <item>APP消费</item>-->
+<!--    </array>-->
+<!--    <array name="video_resolution">-->
+<!--        <item>360P</item>-->
+<!--        <item>480P</item>-->
+<!--        <item>720P</item>-->
+<!--    </array>-->
+<!--    <array name="video_resolution_value">-->
+<!--        <item>360</item>-->
+<!--        <item>480</item>-->
+<!--        <item>720</item>-->
+<!--    </array>-->
+<!--    <array name="vip_buy">-->
+<!--        <item>VIP会员</item>-->
+<!--        <item>直播芝麻币</item>-->
+<!--    </array>-->
+<!--    <array name="vip_des">-->
+<!--        <item>楼凤信息解锁</item>-->
+<!--        <item>付费视频(6折)</item>-->
+<!--        <item>VIP标识</item>-->
+<!--        <item>无限观影</item>-->
+<!--        <item>无限下载</item>-->
+<!--        <item>投屏</item>-->
+<!--    </array>-->
+<!--    <array name="vip_status">-->
+<!--        <item>1</item>-->
+<!--        <item>1</item>-->
+<!--        <item>1</item>-->
+<!--        <item>1</item>-->
+<!--        <item>1</item>-->
+<!--        <item>@null</item>-->
+<!--        <item>@null</item>-->
+<!--        <item>@null</item>-->
+<!--        <item>@null</item>-->
+<!--        <item>@null</item>-->
+<!--    </array>-->
+<!--    <array name="wallet_des">-->
+<!--        <item>直播打赏</item>-->
+<!--        <item>玩游戏</item>-->
+<!--        <item>社区打赏</item>-->
+<!--        <item>购买视频</item>-->
+<!--        <item>楼凤解锁</item>-->
+<!--    </array>-->
+<!--    <array name="wallet_list">-->
+<!--        <item>银行卡提现</item>-->
+<!--        <item>支付宝提现</item>-->
+<!--        <item>STOwhite提现</item>-->
+<!--    </array>-->
+<!--    <array name="withdraw_record">-->
+<!--        <item>收益记录</item>-->
+<!--        <item>提现记录</item>-->
+<!--    </array>-->
+<!--    <array name="works_community_title">-->
+<!--        <item>帖子</item>-->
+<!--    </array>-->
+<!--    <array name="works_title">-->
+<!--        <item>长视频</item>-->
+<!--        <item>短视频</item>-->
+<!--        <item>帖子</item>-->
+<!--    </array>-->
+
+
+</resources>

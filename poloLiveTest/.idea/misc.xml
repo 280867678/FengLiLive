@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/drawable/bg_avatar_default.xml" value="0.1325" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/drawable/drawable_image_bg_0dp.xml" value="0.1255" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/drawable/drawable_image_bg_5dp.xml" value="0.1255" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/activity_coin_recharge.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/activity_coin_recharge2.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/activity_home_page.xml" value="0.1125" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/activity_sllive2.xml" value="0.1125" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/fq_base_loading.xml" value="0.11822916666666666" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/fq_fragment_home_hot.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/fq_fragment_home_sort.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/fragment_home.xml" value="0.11822916666666666" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/fragment_recharge_coin.xml" value="0.11822916666666666" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/view_bgatitlebar.xml" value="0.1125" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/xbanner_item_image.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app/src/main/res/layout/xbanner_item_image_corner_5.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_danmu_nobility_bg_1.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_nobility_open_notice_bg_1.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_nobility_stealth_top_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_top_tag_copper_circle.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_top_tag_gold_circle.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_top_tag_gray_circle.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_top_tag_silver_circle.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_user_grade_bg_1.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable-v24/fq_shape_user_grade_bg_2.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_achieve_shape_bg_anchor_open_notice.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_btn_compose_cancel_shape.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_btn_compose_shape.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_btn_round_white_selector.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_btn_round_white_selector_frame.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_btn_start_live_selector.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_gradient_gw_shape.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_gradient_hd_shape.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_hj_float_window_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_hj_float_window_blue_btn_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_ic_private_msg_loading_anim.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_icon_live_attention_selector.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_purple_shape_nobility_open.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_qm_shape_qm_marqueeview_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_red_shape_nobility_open.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_bottom_corners_white_bg_2.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_danmu_guard_month_text_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_danmu_guard_year_text_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_dialog_top_corner_black_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_game_prize_content_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_game_prize_title_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_live_more_msg_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_live_sys_notice_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_live_title_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_live_top_notice_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_live_vip_count_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_luck_notice.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_msg_bg_transparent.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_nobility_open_notice_bg_7.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_nobility_stealth_label.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_pay_mask_score_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_pay_ticket_room_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_red_label_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_top_tag_gray_selector.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_top_tag_red_divider.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_user_avatar_oval_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_shape_user_grade_bg_1.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_trumpet_notice_bg.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_yellow_shape_nobility_open.xml" value="0.195" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/drawable/fq_yy_link_mute_transparent_bg.xml" value="0.1485" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/activity_anchor_auth.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/activity_anchor_auth_result.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/activity_award_history.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/activity_hjproduct_buy_detail.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/activity_hjproduct_dynamic.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/activity_nobility_open.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/activity_search.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/activity_web_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_activity_sl_live.xml" value="0.15811088295687886" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_dialog_compose_tips.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_dialog_dedicate_top.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_dialog_dedicate_top_all.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_dialog_open_nobility_tips.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_dialog_vip_top.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_fragment_home_attention.xml" value="0.24974358974358973" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_fragment_home_hot.xml" value="0.10625" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_fragment_home_sort.xml" value="0.12135416666666667" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_fragment_live_home.xml" value="0.16614583333333333" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_fragment_sl_live.xml" value="0.12395833333333334" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_giftbox_layout.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_include_live_pusher_info.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_item_list_dedicate_top_live.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_item_list_live_view_new.xml" value="0.10625" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_item_list_recommend.xml" value="0.10625" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_item_list_vip.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_item_list_yy_link_seat.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_anchor_grade.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_chat_msg_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_components_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_empty_view_attention.xml" value="0.19537037037037036" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_empty_view_income.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_empty_view_vip.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_empty_view_warp.xml" value="0.10625" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_footer_view_vip.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_gift_anim_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_hd_window_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_head_view_online_user.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_live_animation_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_live_banner_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_live_game_open_prize_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_live_guide_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_live_msg_danmu_nobitity_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_live_msg_danmu_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_ly_telecontrol_window_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_nobility_enter_anim_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_nobility_open_top_notice.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_open_guard_anim_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_open_nobility_anim_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_pay_tickets_enter_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_user_grade.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_user_nickname_grade.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_layout_yy_link_seat_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_ml_fragment_home_hot.xml" value="0.1" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_qm_notice_window.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_recycle_item_chat_list.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_recycle_item_user_avatar.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_view_guide_rate.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_view_room_container.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/fq_view_room_item.xml" value="0.25364583333333335" />
+        <entry key="..\:/AS/work/poloLiveTest/app_SLLiveSDK/src/main/res/layout/view_bgatitlebar.xml" value="0.25364583333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
